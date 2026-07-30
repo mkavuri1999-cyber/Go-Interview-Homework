@@ -23,3 +23,12 @@ models:
       - github.com/99designs/gqlgen/graphql.ID
       - github.com/99designs/gqlgen/graphql.Int
       - github.com/99designs/gqlgen/graphql.Int64
+  User:
+    fields:
+      tasks:
+        resolver: true
+  Task:
+    fields:
+      user:
+        resolver: true
+
